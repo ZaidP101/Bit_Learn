@@ -1,4 +1,4 @@
-// Creating a JSON structure for the C++ learning material provided
+
 
 {
     "1_Introduction_to_CPP": {
@@ -32,7 +32,7 @@
             "bool": "Stores true or false.",
             "void": "Represents no type."
         },
-        "example": {
+        "code": {
             "variables": [
                 {"type": "int", "value": "25"},
                 {"type": "float", "value": "65.5"},
@@ -43,7 +43,7 @@
     },
     "4_Input_and_Output": {
         "description": "Using `cin` for input and `cout` for output.",
-        "example": {
+        "code": {
             "input": "cin >> age;",
             "output": "cout << 'Your age is: ' << age;"
         },
@@ -57,37 +57,37 @@
         "description": "Various control structures to control the flow of the program.",
         "if_else": {
             "syntax": "if (condition) { /* code */ } else { /* code */ }",
-            "example": "if (number > 5) { cout << 'Greater'; } else { cout << 'Not greater'; }"
+            "code": "if (number > 5) { cout << 'Greater'; } else { cout << 'Not greater'; }"
         },
         "switch_case": {
             "syntax": "switch (expression) { case value: /* code */ break; default: /* code */ }",
-            "example": "switch (day) { case 1: cout << 'Monday'; break; default: cout << 'Invalid day'; break; }"
+            "code": "switch (day) { case 1: cout << 'Monday'; break; default: cout << 'Invalid day'; break; }"
         },
         "loops": {
             "for": {
                 "syntax": "for (int i = 0; i < 5; i++) { /* code */ }",
-                "example": "for (int i = 0; i < 5; i++) { cout << i; }"
+                "code": "for (int i = 0; i < 5; i++) { cout << i; }"
             },
             "while": {
                 "syntax": "while (condition) { /* code */ }",
-                "example": "int i = 0; while (i < 5) { cout << i; i++; }"
+                "code": "int i = 0; while (i < 5) { cout << i; i++; }"
             },
             "do_while": {
                 "syntax": "do { /* code */ } while (condition);",
-                "example": "int i = 0; do { cout << i; i++; } while (i < 5);"
+                "code": "int i = 0; do { cout << i; i++; } while (i < 5);"
             }
         }
     },
     "6_Functions": {
         "description": "Functions are blocks of code that perform specific tasks.",
         "syntax": "return_type function_name(parameters) { /* code */ }",
-        "example": {
+        "code": {
             "function_declaration": "int add(int a, int b) { return a + b; }",
             "function_call": "int result = add(10, 20);"
         },
         "function_overloading": {
             "description": "C++ allows multiple functions with the same name but different parameters.",
-            "example": {
+            "code": {
                 "int_add": "int add(int a, int b) { return a + b; }",
                 "float_add": "float add(float a, float b) { return a + b; }"
             }
@@ -96,13 +96,13 @@
     "7_Arrays": {
         "description": "Arrays are collections of variables of the same type.",
         "syntax": "type array_name[size];",
-        "example": "int arr[5] = {1, 2, 3, 4, 5};",
+        "code": "int arr[5] = {1, 2, 3, 4, 5};",
         "access": "arr[0], arr[1], ... arr[n]"
     },
     "8_Pointers": {
         "description": "Pointers store the memory address of a variable.",
         "syntax": "type *ptr;",
-        "example": {
+        "code": {
             "pointer_declaration": "int *ptr = &num;",
             "dereferencing": "cout << *ptr;"
         }
@@ -112,21 +112,21 @@
         "concepts": {
             "classes_and_objects": {
                 "description": "A class is a blueprint for creating objects.",
-                "example": {
+                "code": {
                     "class_declaration": "class Person { public: string name; void introduce() { cout << name; } };",
                     "object_creation": "Person p; p.name = 'John'; p.introduce();"
                 }
             },
             "inheritance": {
                 "description": "Inheritance allows one class to inherit properties and methods of another.",
-                "example": {
+                "code": {
                     "base_class": "class Animal { public: void eat() { cout << 'Eating'; } };",
                     "derived_class": "class Dog : public Animal { public: void bark() { cout << 'Barking'; } };"
                 }
             },
             "polymorphism": {
                 "description": "Polymorphism allows methods to behave differently based on the object.",
-                "example": {
+                "code": {
                     "virtual_function": "class Animal { public: virtual void sound() { cout << 'Animal sound'; } };",
                     "overridden_function": "class Dog : public Animal { public: void sound() { cout << 'Bark'; } };"
                 }
@@ -142,14 +142,3 @@
     }
 }
 
-// # Saving the JSON to a file
-// import json
-
-// # File path where the JSON will be saved
-// file_path = '/mnt/data/cpp_learning_material.json'
-
-// # Write the dictionary to a JSON file
-// with open(file_path, 'w') as json_file:
-//     json.dump(cpp_learning_material, json_file, indent=4)
-
-// file_path

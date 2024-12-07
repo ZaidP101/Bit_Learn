@@ -1,6 +1,6 @@
 {
-  "JavaScript": {
-    "1. Introduction": {
+  "Introduction to Javascript": {
+    "1. What is JavaScript": {
       "description": "JavaScript is a programming language that enables dynamic behavior on websites.",
       "features": [
         "Runs in the browser",
@@ -59,25 +59,25 @@
     },
     "5. Functions": {
       "definition": "Reusable blocks of code.",
-      "example": "function greet(name) { return `Hello, ${name}`; }"
+      "code": "function greet(name) { return `Hello, ${name}`; }"
     },
     "6. Objects and Arrays": {
       "arrays": {
-        "example": "let fruits = ['Apple', 'Banana']; console.log(fruits[0]);"
+        "coded": "let fruits = ['Apple', 'Banana']; console.log(fruits[0]);"
       },
       "objects": {
-        "example": "let person = { name: 'Alice', age: 25 }; console.log(person.name);"
+        "code": "let person = { name: 'Alice', age: 25 }; console.log(person.name);"
       }
     },
     "7. DOM Manipulation": {
       "selectingElements": {
-        "example": "const heading = document.getElementById('title');"
+        "code": "const heading = document.getElementById('title');"
       },
       "changingContent": {
-        "example": "heading.textContent = 'New Title';"
+        "code": "heading.textContent = 'New Title';"
       },
       "eventListeners": {
-        "example": "button.addEventListener('click', () => { alert('Button clicked!'); });"
+        "code": "button.addEventListener('click', () => { alert('Button clicked!'); });"
       }
     },
     "8. Intermediate Topics": {
@@ -86,9 +86,10 @@
         "arrowFunctions": "const greet = (name) => `Hello, ${name}`;"
       },
       "promises": {
-        "example": "fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));"
+        "code": "fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));"
       },
       "modules": {
+        
         "export": "export const greet = () => console.log('Hello');",
         "import": "import { greet } from './export.js'; greet();"
       }

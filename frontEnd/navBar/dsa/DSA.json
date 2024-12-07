@@ -1,6 +1,6 @@
 {
-  "DSA_Course": {
-    "Introduction_to_DSA": {
+  "Introduction to DSA ": {
+    "What is DSA": {
       "description": "Data Structures and Algorithms (DSA) are the building blocks for solving problems in programming efficiently. Data structures are ways of organizing and storing data, while algorithms are step-by-step procedures for solving a problem. Understanding DSA helps improve the efficiency and performance of programs."
     },
     "Types_of_Data_Structures": {

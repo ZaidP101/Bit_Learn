@@ -1,6 +1,6 @@
 {
-  "Java_Course": {
-    "Introduction_to_Java": {
+  "Introduction_to_Java": {
+    "What is JAVA": {
       "description": "Java is a versatile, object-oriented programming language widely used for building applications ranging from web apps to mobile apps and enterprise-level systems. It’s platform-independent, meaning you can write code once and run it anywhere.",
       "environment_setup": {
         "install_jdk": "Download and install the latest JDK from Oracle's website or OpenJDK.",

@@ -1,6 +1,6 @@
 {
-  "Python_Tutorial": {
-    "Introduction": "Python is a high-level, interpreted programming language known for its simplicity and versatility. It's widely used for web development, data analysis, machine learning, and automation. Python emphasizes readability with an easy-to-understand syntax.",
+  "Introduction to Python": {
+    "What is Python": "Python is a high-level, interpreted programming language known for its simplicity and versatility. It's widely used for web development, data analysis, machine learning, and automation. Python emphasizes readability with an easy-to-understand syntax.",
     "1_Setting_Up_Python": {
       "Installation": [
         "Download Python from python.org.",
@@ -94,12 +94,13 @@
         "Explanation": "Open a file in 'write' mode ('w') to modify its contents."
       }
     },
-    "9_Object_Oriented_Programming": {
-      "Classes_and_Objects": {
-        "Code": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def greet(self):\n        return f'Hi, I\'m {self.name}.'\np = Person('Alice', 25)\nprint(p.greet())",
-        "Explanation": "Classes define the blueprint for objects. '__init__' is the constructor, and 'self' refers to the current instance."
-      }
-    },
+ "9_Object_Oriented_Programming": {
+  "Classes_and_Objects": {
+    "Code": "class Person:\\n    def __init__(self, name, age):\\n        self.name = name\\n        self.age = age\\n    def greet(self):\\n        return f'Hi, I\\'m {self.name}.'\\np = Person('Alice', 25)\\nprint(p.greet())",
+    "Explanation": "Classes define the blueprint for objects. '__init__' is the constructor, and 'self' refers to the current instance."
+  }
+},
+
     "10_Modules_and_Libraries": {
       "Importing_Modules": {
         "Code": "import math\nprint(math.sqrt(16))",
