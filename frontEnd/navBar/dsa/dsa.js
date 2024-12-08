@@ -1,5 +1,5 @@
 
-const apiUrl = 'dsa.json';
+const apiUrl = 'DSA.json';
 
 // Define an asynchronous function to fetch JSON
 async function fetchJsonData(url) {

@@ -1,14 +1,20 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #20232a;
+    font-family: "Share Tech Mono", monospace;
+    font-style: normal;
+    background:#150220;
     color: white;
     overflow-x: hidden;
 }
 
+
 header {
-    background-color:
-    #1d1b20;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +22,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    backdrop-filter: blur(10px);
 }
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -38,6 +47,29 @@ a {
     border-radius: 50%;
     margin: 0px 0px 0px 27px;
 
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 6px #61dafb;
+    transition: text-shadow 0.2s;
+    border:none;
+    outline: none;
+}
+
+.logo span {
+    color: #ffc107;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 6px #61dafb;
+    transition: text-shadow 0.2s;
+    border:none;
+    outline: none;
 }
 
 nav {
