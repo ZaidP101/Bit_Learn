@@ -1,0 +1,287 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9FAFB;
+    color: #333;
+}
+
+header {
+    background-color: #4F46E5; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #4F46E5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif; 
+
+.video-card {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-card img {
+    width: 320px;  
+    height: 180px; 
+    object-fit: cover;
+}
+
+.video-card .card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.video-card h3 {
+    color: #4F46E5;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.video-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: lightslategray;
+    font-weight: 700;
+}
+
+.video-card span {
+    font-size: 0.9em;
+    color: #0b1691;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card:hover img {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #1F2937; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.cta-button {
+    background-color: #4F46E5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #4338CA;
+}
+
+.category-heading {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #4F46E5;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+.footer {
+    background-color: #1F2937; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FCFFE7; /* Soft light pink background */
+    color: #173B45; /* Dark teal for text */
+}
+
+header {
+    background-color: #EC994B; /* Bright orange header */
+    color: #F8EDED; /* Light pink text for contrast */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #B43F3F; /* Deep red for headings */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the grid items */
+}
+
+.video-card {
+    background-color: #F8EDED; /* Light pink card background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-card img {
+    width: 320px;  /* Added width */
+    height: 180px; /* Added height */
+    object-fit: cover;
+}
+
+.video-card .card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.video-card h3 {
+    color: #B43F3F; /* Deep red for titles */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; /* Use Arial for titles */
+}
+
+.video-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #173B45; /* Dark teal for description text */
+    font-weight: 700;
+}
+
+.video-card span {
+    font-size: 0.9em;
+    color: #FF8225; /* Bright orange for additional info */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for spans */
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card:hover img {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #EC994B; /* Dark teal footer */
+    color: #F8EDED; /* Light pink footer text */
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.cta-button {
+    background-color: #FF8225; /* Bright orange button */
+    color: #F8EDED; /* Light pink text for contrast */
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #B43F3F; /* Deep red on hover */
+}
