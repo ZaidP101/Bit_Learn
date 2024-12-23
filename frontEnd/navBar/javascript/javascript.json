@@ -1,5 +1,5 @@
 {
-  "Introduction to Javascript": {
+  "Introduction to JavaScript": {
     "1. What is JavaScript": {
       "description": "JavaScript is a programming language that enables dynamic behavior on websites.",
       "features": [
@@ -11,6 +11,16 @@
         "Form validation",
         "Creating sliders, modals, and popups",
         "Sending requests to servers (AJAX/Fetch)"
+      ],
+      "code_examples": [
+        {
+          "title": "Alert Example",
+          "code": "alert('Welcome to JavaScript!');"
+        },
+        {
+          "title": "Form Validation Example",
+          "code": "if (username === '') { alert('Username is required!'); }"
+        }
       ]
     },
     "2. Setting Up Your Environment": {
@@ -21,6 +31,16 @@
       "fileStructure": [
         "index.html",
         "script.js (linked via <script src='script.js'></script>)"
+      ],
+      "code_examples": [
+        {
+          "title": "HTML File Setup",
+          "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>JavaScript Example</title>\n</head>\n<body>\n  <script src='script.js'></script>\n</body>\n</html>"
+        },
+        {
+          "title": "Basic JavaScript in HTML",
+          "code": "<script>console.log('Hello, JavaScript!');</script>"
+        }
       ]
     },
     "3. Basics of JavaScript": {
@@ -41,7 +61,17 @@
         "arithmetic": ["+", "-", "*", "/", "%"],
         "comparison": ["==", "===", "!=", ">", "<", ">=", "<="],
         "logical": ["&&", "||", "!"]
-      }
+      },
+      "code_examples": [
+        {
+          "title": "Variable Declaration",
+          "code": "let age = 25; const name = 'Alice'; var isStudent = true;"
+        },
+        {
+          "title": "Arithmetic Operators",
+          "code": "let sum = 10 + 5; let product = 10 * 3;"
+        }
+      ]
     },
     "4. Control Structures": {
       "ifElse": {
@@ -55,19 +85,49 @@
       "loops": {
         "for": "for (let i = 0; i < 5; i++) { console.log(i); }",
         "while": "let i = 0; while (i < 5) { console.log(i); i++; }"
-      }
+      },
+      "code_examples": [
+        {
+          "title": "If-Else Example",
+          "code": "let score = 90; if (score > 50) { console.log('Pass'); } else { console.log('Fail'); }"
+        },
+        {
+          "title": "For Loop Example",
+          "code": "for (let i = 1; i <= 5; i++) { console.log('Count: ' + i); }"
+        }
+      ]
     },
     "5. Functions": {
       "definition": "Reusable blocks of code.",
-      "code": "function greet(name) { return `Hello, ${name}`; }"
+      "code": "function greet(name) { return `Hello, ${name}`; }",
+      "code_examples": [
+        {
+          "title": "Simple Function",
+          "code": "function add(a, b) { return a + b; } console.log(add(2, 3));"
+        },
+        {
+          "title": "Arrow Function",
+          "code": "const multiply = (a, b) => a * b; console.log(multiply(3, 4));"
+        }
+      ]
     },
     "6. Objects and Arrays": {
       "arrays": {
-        "coded": "let fruits = ['Apple', 'Banana']; console.log(fruits[0]);"
+        "code": "let fruits = ['Apple', 'Banana']; console.log(fruits[0]);"
       },
       "objects": {
         "code": "let person = { name: 'Alice', age: 25 }; console.log(person.name);"
-      }
+      },
+      "code_examples": [
+        {
+          "title": "Array Methods",
+          "code": "let numbers = [1, 2, 3]; numbers.push(4); console.log(numbers);"
+        },
+        {
+          "title": "Object Properties",
+          "code": "let car = { brand: 'Toyota', model: 'Corolla' }; console.log(car.model);"
+        }
+      ]
     },
     "7. DOM Manipulation": {
       "selectingElements": {
@@ -78,7 +138,17 @@
       },
       "eventListeners": {
         "code": "button.addEventListener('click', () => { alert('Button clicked!'); });"
-      }
+      },
+      "code_examples": [
+        {
+          "title": "Change Background Color",
+          "code": "document.body.style.backgroundColor = 'lightblue';"
+        },
+        {
+          "title": "Add Click Event",
+          "code": "document.getElementById('btn').addEventListener('click', () => { alert('Clicked!'); });"
+        }
+      ]
     },
     "8. Intermediate Topics": {
       "ES6Features": {
@@ -89,10 +159,19 @@
         "code": "fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));"
       },
       "modules": {
-        
         "export": "export const greet = () => console.log('Hello');",
         "import": "import { greet } from './export.js'; greet();"
-      }
+      },
+      "code_examples": [
+        {
+          "title": "Using Fetch API",
+          "code": "fetch('https://api.github.com').then(response => response.json()).then(data => console.log(data));"
+        },
+        {
+          "title": "Module Import/Export",
+          "code": "// In math.js\nexport const square = (x) => x * x;\n// In main.js\nimport { square } from './math.js'; console.log(square(5));"
+        }
+      ]
     },
     "Practice Ideas": [
       "Build a simple calculator",

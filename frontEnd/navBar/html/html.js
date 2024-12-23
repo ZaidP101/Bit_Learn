@@ -30,11 +30,13 @@ function displayJsonData(data, parentElement) {
       // Create a title for the nested object
       const title = document.createElement('h2');
       title.textContent = formatTitle(key);
+      title.style.color = '#FFB200';
       parentElement.appendChild(title);
 
       // Create a new container for the nested data
       const container = document.createElement('div');
-      container.style.marginLeft = '20px';
+      container.style.marginLeft = '50px';
+      container.style.maxWidth = '75%';
       parentElement.appendChild(container);
 
       // Recursively display nested data
@@ -43,11 +45,14 @@ function displayJsonData(data, parentElement) {
       // If the key is "Code", display it in a terminal-like format
       const codeTitle = document.createElement('h4');
       codeTitle.textContent = "Code:";
+      // title.style.color = '#219B9D';
       parentElement.appendChild(codeTitle);
 
       const codeContainer = document.createElement('pre');
-      codeContainer.style.backgroundColor = "#1e2125";
-      codeContainer.style.color = "#00ff00";
+      codeContainer.style.maxWidth = "60%";
+      codeContainer.style.borderRadius = "20px";
+      codeContainer.style.backgroundColor = "#0B192C";
+      codeContainer.style.color = "#ebfc00";
       codeContainer.style.padding = "15px";
       codeContainer.style.borderRadius = "5px";
       codeContainer.style.fontFamily = "'Courier New', Courier, monospace";
@@ -57,7 +62,7 @@ function displayJsonData(data, parentElement) {
       parentElement.appendChild(codeContainer);
     } else {
       // Display key-value pairs
-      const subtitle = document.createElement('h4');
+      const subtitle = document.createElement('h3');
       subtitle.textContent = formatTitle(key);
       parentElement.appendChild(subtitle);
 

@@ -102,34 +102,50 @@
         "Hash collisions may occur, requiring resolution techniques like chaining or open addressing."
       ]
     },
-    "Trees_and_Graphs": {
-      "binary_trees": {
-        "description": "A binary tree is a tree data structure where each node has at most two children, commonly referred to as left and right children."
-      },
-      "binary_search_tree": {
-        "description": "A binary search tree is a binary tree where the left child is smaller than the parent node, and the right child is larger."
-      },
-      "operations": [
-        "Insertion: Insert a new node in the correct position.",
-        "Traversal: Visiting all nodes in the tree (Inorder, Preorder, Postorder)."
-      ],
-      "graph": {
-        "description": "A graph consists of nodes (vertices) and edges (connections between nodes). Graphs can be directed or undirected and weighted or unweighted.",
-        "traversal": [
-          "BFS (Breadth-First Search): Explore all neighbors of a node before moving to the next level.",
-          "DFS (Depth-First Search): Explore as far as possible along a branch before backtracking."
-        ]
-      }
-    },
-    "Algorithms": {
+    "Sorting_and_Searching_Algorithms": {
       "sorting_algorithms": [
-        "Bubble Sort: Repeatedly compare and swap adjacent elements (O(n^2) time complexity).",
-        "Merge Sort: Divide the array into halves, sort each half, and merge them (O(n log n)).",
-        "Quick Sort: Select a pivot element and partition the array around it (O(n log n) on average)."
+        {
+          "name": "Bubble Sort",
+          "description": "Bubble sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.",
+          "time_complexity": "O(n^2) in the worst case.",
+          "example": {
+            "code": "public class BubbleSort {\n    public static void bubbleSort(int[] arr) {\n        for (int i = 0; i < arr.length - 1; i++) {\n            for (int j = 0; j < arr.length - 1 - i; j++) {\n                if (arr[j] > arr[j + 1]) {\n                    int temp = arr[j];\n                    arr[j] = arr[j + 1];\n                    arr[j + 1] = temp;\n                }\n            }\n        }\n    }\n}"
+          }
+        },
+        {
+          "name": "Merge Sort",
+          "description": "Merge sort divides the array into halves, recursively sorts each half, and merges the sorted halves.",
+          "time_complexity": "O(n log n).",
+          "example": {
+            "code": "public class MergeSort {\n    public static void mergeSort(int[] arr) {\n        if (arr.length <= 1) return;\n        int mid = arr.length / 2;\n        int[] left = Arrays.copyOfRange(arr, 0, mid);\n        int[] right = Arrays.copyOfRange(arr, mid, arr.length);\n        mergeSort(left);\n        mergeSort(right);\n        merge(arr, left, right);\n    }\n    private static void merge(int[] arr, int[] left, int[] right) {\n        int i = 0, j = 0, k = 0;\n        while (i < left.length && j < right.length) {\n            if (left[i] < right[j]) arr[k++] = left[i++];\n            else arr[k++] = right[j++];\n        }\n        while (i < left.length) arr[k++] = left[i++];\n        while (j < right.length) arr[k++] = right[j++];\n    }\n}"
+          }
+        },
+        {
+          "name": "Quick Sort",
+          "description": "Quick sort selects a pivot element and partitions the array into two parts: elements less than the pivot and elements greater than the pivot.",
+          "time_complexity": "O(n log n) on average.",
+          "example": {
+            "code": "public class QuickSort {\n    public static void quickSort(int[] arr, int low, int high) {\n        if (low < high) {\n            int pi = partition(arr, low, high);\n            quickSort(arr, low, pi - 1);\n            quickSort(arr, pi + 1, high);\n        }\n    }\n    private static int partition(int[] arr, int low, int high) {\n        int pivot = arr[high];\n        int i = (low - 1);\n        for (int j = low; j < high; j++) {\n            if (arr[j] <= pivot) {\n                i++;\n                int temp = arr[i];\n                arr[i] = arr[j];\n                arr[j] = temp;\n            }\n        }\n        int temp = arr[i + 1];\n        arr[i + 1] = arr[high];\n        arr[high] = temp;\n        return i + 1;\n    }\n}"
+          }
+        }
       ],
       "searching_algorithms": [
-        "Linear Search: Iterate through each element to find a match (O(n) time complexity).",
-        "Binary Search: Efficiently search a sorted array by dividing the search interval in half (O(log n))."
+        {
+          "name": "Linear Search",
+          "description": "Linear search iterates through each element in the list and checks if it matches the target.",
+          "time_complexity": "O(n).",
+          "example": {
+            "code": "public class LinearSearch {\n    public static int linearSearch(int[] arr, int target) {\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] == target) return i;\n        }\n        return -1;\n    }\n}"
+          }
+        },
+        {
+          "name": "Binary Search",
+          "description": "Binary search works on sorted arrays by dividing the search interval in half and repeatedly narrowing down the range.",
+          "time_complexity": "O(log n).",
+          "example": {
+            "code": "public class BinarySearch {\n    public static int binarySearch(int[] arr, int target) {\n        int low = 0, high = arr.length - 1;\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n            if (arr[mid] == target) return mid;\n            if (arr[mid] < target) low = mid + 1;\n            else high = mid - 1;\n        }\n        return -1;\n    }\n}"
+          }
+        }
       ]
     },
     "Time_Complexity": {
@@ -138,10 +154,10 @@
       "O(log n)": "Logarithmic time.",
       "O(n^2)": "Quadratic time."
     },
-    "Intermediate_DSA_Topics": [
-      "Heap: A special tree-based data structure used for implementing priority queues.",
-      "Trie: A tree-like data structure used for storing strings.",
-      "Dynamic Programming: Solve problems by breaking them into subproblems and storing their solutions."
-    ]
+    "Intermediate_DSA_Topics": {
+      "Heap": "A special tree-based data structure used for implementing priority queues.",
+      "Trie": "A tree-like data structure used for storing strings.",
+      "Dynamic Programming": "Solve problems by breaking them into subproblems and storing their solutions."
   }
+}
 }
