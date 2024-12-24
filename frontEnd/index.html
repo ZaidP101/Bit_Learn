@@ -24,12 +24,13 @@
         <a href="./navBar/javascript/javascript.html">JavaScript</a>
         <a href="./navBar/python/python.html">Python</a>
         <a href="./navBar/php/php.html">PHP</a>
-        <a href="./navBar/c++/c++.html">C++</a>
+        <a href="./navBar/cpp/cpp.html">C++</a>
         <a href="./navBar/java/java.html">Java</a>
         <a href="./navBar/dsa/dsa.html">DSA</a>
     </nav>
     <div class="rightnav">
-        <a href="videoComponent.html">Video Tutorials</a>
+        <a href="/signup" style=" margin-right:10px;">Roadmaps</a>
+        <a href="videoComponent.html">VideoTutorials</a>
     </div>
 </header>
 
@@ -37,10 +38,10 @@
     <h1 style="font-size:  45px; margin-bottom: 10px; margin-top: 8%;">Welcome to Your Coding Adventure</h1>
     <h1 id="text">Learn, Create, and Innovate with Bit.Learn!</h1>
     <div class="search-bar">
-        <input type="text" placeholder="Search our tutorials, e.g. HTML">
-        <button>Search</button>
+        <input type="text" id="searchInput" placeholder="Search our tutorials, e.g. HTML">
+        <button onclick=performSearch()>Search</button>
     </div>
-    <!-- <h3>Discover the ultimate platform for learning and mastering programming skills.</h3> -->
+  
     <div class="landingPageSection">
        
         <div class="cards-container">
@@ -58,15 +59,7 @@
                     </ul>
                 </p>
             </div>
-            <!-- <div class="card">
-                <h2>Explore Popular Topics</h2>
-                <ul>
-                    <li><strong>HTML & CSS:</strong> Build beautiful, responsive websites.</li>
-                    <li><strong>JavaScript:</strong> Bring your ideas to life with interactive web applications.</li>
-                    <li><strong>Python:</strong> Dive into data science, machine learning, and automation.</li>
-                    <li><strong>DSA:</strong> Strengthen your problem-solving skills.</li>
-                </ul>
-            </div> -->
+           
             <div class="card">
                 <h2>Join Our Community</h2>
                 <p>Connect with fellow learners and experts on {BiT}.learn;. Our thriving community offers:
@@ -87,10 +80,17 @@
     </div>
 </main>
 
-<footer>
-    <p style="font-size: smaller;">&copy; 2024 Bit.Learn. All rights reserved.</p>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 BitLearn. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">About Us</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
 </footer>
-
+<script src="search.js"></script>
 </body>
 </html>
 
